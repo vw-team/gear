@@ -115,10 +115,17 @@
     ]
   },
   "devDependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.11",
+    "mathjs": "^5.10.0",
     "mobx": "^5.9.4",
     "mobx-react": "^5.4.3",
+    "mockjs": "^1.0.1-beta3",
+    "moment": "^2.24.0",
     "node-sass": "^4.12.0",
+    "ramda": "^0.26.1",
     "react-router-dom": "^5.0.0",
+    "rxjs": "^6.5.2",
     "sass-loader": "^7.1.0",
     "styled-components": "^4.2.0"
   }
