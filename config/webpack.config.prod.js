@@ -1,3 +1,5 @@
+/* eslint-disable semi */
+/* eslint-disable comma-dangle */
 'use strict';
 
 const fs = require('fs');
@@ -21,7 +23,6 @@ const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin-alt');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
-
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
@@ -224,6 +225,29 @@ module.exports = {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
+      '@': paths.appSrc,
+      '@comp': paths.comp,
+      '@con': paths.con,
+      '@store': paths.store,
+      '@scss': paths.scss,
+      '@common': paths.common,
+      '@commonStore': paths.commonStore,
+      '@commonScss': paths.commonScss,
+      '@commonStyled': paths.commonStyled,
+      '@util': paths.util,
+      '@router': paths.router,
+      '@tool': paths.tool,
+      '@module': paths.module,
+      '@static': paths.static,
+      '@icon': paths.icon,
+      '@image': paths.image,
+      '@picture': paths.picture,
+      '@music': paths.music,
+      '@vedio': paths.vedio,
+      '@movie': paths.movie,
+      '@lib': paths.lib,
+      '@mock': paths.mock,
+      '@test': paths.test,
     },
     plugins: [
       // Adds support for installing with Plug'n'Play, leading to faster installs and adding
@@ -260,7 +284,6 @@ module.exports = {
             options: {
               formatter: require.resolve('react-dev-utils/eslintFormatter'),
               eslintPath: require.resolve('eslint'),
-              
             },
             loader: require.resolve('eslint-loader'),
           },
@@ -331,7 +354,6 @@ module.exports = {
               cacheDirectory: true,
               // Save disk space when time isn't as important
               cacheCompression: true,
-              
               // If an error happens in a package, it's possible to be
               // because it was compiled. Thus, we don't want the browser
               // debugger to show the original code. Instead, the code
