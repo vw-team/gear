@@ -4,7 +4,8 @@ class App extends Component {
   render () {
     return (
       <div>
-        <p>Hello, Zeit!</p>
+        <p>行行走走忙忙匆匆挤挤</p>
+        <p>进进出出影影形形觅觅...</p>
       </div>
     )
   }
