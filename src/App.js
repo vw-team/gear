@@ -1,6 +1,8 @@
 // @flow
 import React, { Component } from 'react'
 
+import '@commonScss/index.scss'
+
 type Props = {}
 type State = {}
 
