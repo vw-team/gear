@@ -8,7 +8,8 @@
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
-    "allowImportExportEverywhere": true
+    "allowImportExportEverywhere": true,
+    "experimentalDecorators": true
   },
   "ecmaFeatures": {
     "arrowFunctions": true,

@@ -62,4 +62,10 @@ We are now ready to deploy the app.
 now
 ```
 
+### Run in Server
+```
+npm install -g serve
+serve -s build
+```
+
 For more information on deploying a CRA generated React project on Now, [read our Guide](https://zeit.co/guides/deploying-react-with-now-cra).
