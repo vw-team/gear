@@ -1,0 +1,31 @@
+{
+  "presets": [
+    "react-app",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        }
+      }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        // "pragma": "dom", // default pragma is React.createElement
+        // "pragmaFrag": "DomFrag", // default is React.Fragment
+        // "throwIfNamespace": false // defaults to true
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "presets": [["@babel/preset-react", { "development": true }]]
+    }
+  },
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+    ["@babel/plugin-syntax-dynamic-import"]
+  ]
+}
